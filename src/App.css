@@ -1,0 +1,42 @@
+header {
+    background-color: #000;
+    color: #fff;
+  
+    
+}
+h1 {
+    color: white;
+    font-style: italic;
+     text-decoration: none;
+}
+.logoimg {
+    width: 140px;
+    height: 60px;
+    margin: 10px;
+    object-fit: cover;
+    align-items: center;
+    justify-content: center;
+
+    
+}
+nav a {
+    text-decoration: none;
+    color: white;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+}
+nav a:hover{
+    background-color: #000;
+    color: #fff;
+    border-radius: 10px;
+}
+form input {
+    padding: 10px;
+    margin: 5px;
+
+}
+form button{
+    padding: 10px;
+    border-radius: 12px;
+}

@@ -1,5 +1,6 @@
 import { useState } from "react";
-import React from 'react'
+import React from "react";
+
 
 const useForm = ( initialForm = {} ) => {
     const [ formSate, setFormState ] = useState( initialForm );
@@ -13,15 +14,15 @@ const useForm = ( initialForm = {} ) => {
         setFormState( initialForm );
     }
   return (
+
     <>
-    ...formState,
+     ...formState,
    formState,
    onInputChange,
    onReasetForm,
-    
     </>
-   
   )
-}
+   
+};
 
-export default useForm
+export default useForm;
