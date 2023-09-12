@@ -1,14 +1,10 @@
 header {
     background-color: #000;
     color: #fff;
-  
-    
+
+
 }
-h1 {
-    color: white;
-    font-style: italic;
-     text-decoration: none;
-}
+
 .logoimg {
     width: 140px;
     height: 60px;
@@ -17,8 +13,9 @@ h1 {
     align-items: center;
     justify-content: center;
 
-    
+
 }
+
 nav a {
     text-decoration: none;
     color: white;
@@ -26,17 +23,57 @@ nav a {
     justify-content: center;
     align-items: center;
 }
-nav a:hover{
+
+nav a:hover {
     background-color: #000;
     color: #fff;
     border-radius: 10px;
 }
+
 form input {
     padding: 10px;
     margin: 5px;
 
 }
-form button{
+
+form button {
     padding: 10px;
     border-radius: 12px;
+}
+
+.tests {
+    margin-top: 40px;
+    text-align: center;
+    background-image: url(./imges/node.png);
+    height: 30vh;
+    background-size: cover;
+    object-fit: cover;
+    align-items: center;
+    background-position: center;
+    background-repeat: none;
+
+
+}
+
+.tests h1,
+p {
+    text-align: center;
+    background-color: rgba(0, 255, 255, 0.295);
+    padding: 10px;
+    font-style: italic;
+    
+}
+
+.imes {
+    width: 100%;
+}
+.imes img {
+    width: 150px;
+    height: 150px;
+    margin:50px;
+    opacity: .8;
+    object-fit: cover;
+    background-position: center;
+    box-shadow: 1px 1px 5px #000;
+    border-radius: 100%;
 }
