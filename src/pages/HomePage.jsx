@@ -1,6 +1,12 @@
 import React, { useReducer } from 'react'
+const types = {
+    masM: 'masM',
+    menosM: 'menosM',
+    masA: 'masA',
+    menosA: 'menosA',
+}
 import Navbar from '../Navbar'
-import es from '../imges/es.jpg';
+import Comprar from './Comprar'
 const currentTime = new Date();
 const month = currentTime.getMonth();
 const year = currentTime.getFullYear();
@@ -11,16 +17,16 @@ const reducer = (state, action) => {
     let newYear = state.a;
     switch (action.type) {
 
-        case 'masM':
+        case types.masM:
             newMonth = newMonth == 11 ? 0 : newMonth + 1;
             break;
-        case 'menosM':
+        case types.menosM:
             newMonth = newMonth == 0 ? 11 : newMonth - 1;
             break;
-        case 'masA':
+        case types.masA:
             newYear = newYear + 1;
             break;
-        case 'menosA':
+        case types.menosA:
             newYear = newYear - 1;
             break;
     }
@@ -40,20 +46,26 @@ const HomePage = () => {
             <div className='tests'>
                 <h1>Home Page</h1>
                 <p>This is the home page... {texto}</p>
-                <div className='imes'><img src={es} /></div>
+
             </div>
             <div className='calendario-container'>
-                {messes[fecha.m]} ({fecha.a})
+                <div className='date-container'
+                    style={(fecha.m < month && fecha.a <= year || fecha.a < year) ? { color: "red" } : { color: 'green' }}>
+                    {messes[fecha.m]} ({fecha.a})
+                </div>
+
 
                 <div className='btnsection'>
-                    <p>Messes:</p><button onClick={() => dispatch({ type: 'masM' })} >+</button>
-                    <button onClick={() => dispatch({ type: 'menosM' })} >-</button>
+                    <p>Messes:</p><button onClick={() => dispatch({ type: types.masM })} >+</button>
+                    <button onClick={() => dispatch({ type: types.menosM })} >-</button>
                 </div>
                 <div className='btnsection'>
-                    <p>Años:</p><button onClick={() => dispatch({ type: 'masA' })} >+</button>
-                    <button onClick={() => dispatch({ type: 'menosA' })} >-</button>
+                    <p>Años:</p><button onClick={() => dispatch({ type: types.masA })} >+</button>
+                    <button onClick={() => dispatch({ type: types.menosA })} >-</button>
                 </div>
             </div>
+
+            <Comprar />
 
 
         </>

@@ -25,7 +25,7 @@ nav a {
 }
 
 nav a:hover {
-    background-color: #000;
+    background-color: #4e2803;
     color: #fff;
     border-radius: 10px;
 }
@@ -42,25 +42,29 @@ form button {
 }
 
 .tests {
-    margin-top: 40px;
+    padding: 90px;
     text-align: center;
     background-image: url(./imges/node.png);
-    height: 30vh;
+    height: 40vh;
+    width: 100%;
     background-size: cover;
     object-fit: cover;
     align-items: center;
     background-position: center;
     background-repeat: none;
-
+   
 
 }
 
 .tests h1,
 p {
     text-align: center;
-    background-color: rgba(0, 255, 255, 0.295);
+    background-color: rgba(7, 7, 7, 0.76);
     padding: 10px;
     font-style: italic;
+    color: #fff;
+    padding: 20px;
+    
     
 }
 
@@ -80,4 +84,65 @@ p {
 .calendario-container {
     text-align: center;
     margin-top: 160px;
+}
+.date-container {
+    font-size: 25px;
+    padding: 20px;
+    border: 1px solid red;
+   box-shadow: 1px 1px 15px #0a0a0a;
+   background-color: rgba(255, 0, 0, 0.253);
+}
+.btnsection {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    padding: 10px;
+    background-color: rgb(41, 38, 38);
+    color: #fff;
+}
+.btnsection p {
+    background-color: transparent;
+    font-size: 15px;
+}
+.btnsection button{
+    padding: 0;
+    margin: 10px;
+    border-radius: 10px;
+    box-shadow: 1px 1px 12px rgb(241, 2, 2);
+    width: 80px;
+    height: 40px;
+}
+.comprascontainer {
+    text-align: center;
+    margin: 10px;
+}
+.inputcompra{
+    width: 150px;
+    height: 20px;
+    margin: 10px;
+    padding: 10px;
+    box-shadow: 1px 1px 5px red;
+    background-color: lightslategray;
+    color: #000;
+    border: 1px solid red;
+}
+.compra-btn{ 
+    width: 70px;
+    padding: 5px;
+    border-radius: 10px;
+    border: .5px solid red;
+    box-shadow: 1px 1px 5px red;
+    background-color: blue;
+    color: #fff;
+    
+}
+
+
+.btns {
+    
+    width: 50px;
+    height: 30px;
+    margin: 10px;
 }
