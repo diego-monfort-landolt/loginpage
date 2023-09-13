@@ -70,10 +70,14 @@ p {
 .imes img {
     width: 150px;
     height: 150px;
-    margin:50px;
+    margin:110px;
     opacity: .8;
     object-fit: cover;
     background-position: center;
     box-shadow: 1px 1px 5px #000;
     border-radius: 100%;
+}
+.calendario-container {
+    text-align: center;
+    margin-top: 160px;
 }
