@@ -1,5 +1,4 @@
 import React, { useState, useReducer, useRef } from 'react'
-
 const types = {
     menos: 'menos',
     mas: 'mas',
@@ -48,8 +47,8 @@ const Comprar = () => {
                         inputName.current.focus();
                         setMiProducto("");
                         dispatch({
-                            type: types.compror,
-                            payload: { id: Date.now(), nombre: miProducto, canditad: 1 }
+                            type:types.compror,
+                            payload: { id: Date.now(), nombre: miProducto, cantidad: 1 }
                         })
                     }}>Add</button>
 
