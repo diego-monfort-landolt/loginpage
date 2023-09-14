@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import Navbar from '../Navbar'
 import '../stylesheet/dashboard.css'
 import foto from '../imges/bg1.jpg'
+import { AiFillHeart, AiFillFrown } from "react-icons/ai";
 
 const DashboardPage = () => {
   const h2 = <h2><span className='spanS'>W</span>elcome</h2>;
@@ -41,7 +42,7 @@ const DashboardPage = () => {
         </div>
 
         <div className='btn-group'>
-          <h3>{texto ? 'On' : 'Off'}</h3>
+          <h3>{texto ? <AiFillHeart /> : <AiFillFrown />}</h3>
           <button onClick={cambio}>Click!</button>
         </div>
 
