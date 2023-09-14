@@ -40,7 +40,7 @@ const Comprar = () => {
             <div className='comprascontainer'>
                 <h2>Product</h2>
                 <label htmlFor="producto">Product:</label>
-                <input ref={inputName} className='inputcompra' type='text' id="producto" onChange={(e) => setMiProducto(e.target.value)} />
+                <input ref={inputName} value={miProducto} className='inputcompra' type='text' id="producto" onChange={(e) => setMiProducto(e.target.value)} />
 
                 <button className='compra-btn'
                     onClick={() => {
